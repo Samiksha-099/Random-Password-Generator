@@ -1,0 +1,115 @@
+/* Base setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a8edea, #fed6e3); /* Mint + Soft Pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container (card-style) */
+.container {
+  background: #ffffffee;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  width: 360px;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+/* Title */
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Password output area */
+.output {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.output input {
+  flex: 1;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  color: #2575fc;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.output button {
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  border: none;
+  padding: 0 18px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.output button:hover {
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  color: #000;
+}
+
+/* Settings */
+.settings label {
+  display: block;
+  text-align: left;
+  margin: 8px 0;
+  font-size: 15px;
+  color: #222;
+}
+
+.settings input[type="number"] {
+  width: 60px;
+  margin-left: 10px;
+}
+
+/* Generate Button */
+.generate-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.generate-btn:hover {
+  background: linear-gradient(to right, #f6f9d4, #b5ead7);
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  background: linear-gradient(to right, #d4fc79, #96e6a1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
